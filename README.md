@@ -1,6 +1,39 @@
 DesignPatterns
 ==============
 
+####[设计模式 百科](http://baike.baidu.com/link?url=QGQbCTD0FKfOYvGwqzCKZinXiyNDvz95wVEjeyH3n_EShw1HoBRWAK-5y0cON0rkAN-roY0ppH8lqJy0S9e4ja)
+
+
+####[设计模式六大原则](http://www.uml.org.cn/sjms/201211023.asp)
+
+
+####[设计模式大全](http://blog.csdn.net/longronglin/article/details/1454315)
+
+
+####[设计模式原则详解](http://blog.csdn.net/hguisu/article/details/7571617)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 要深刻理解开源代码，必先掌握丰富的设计模式
 
 

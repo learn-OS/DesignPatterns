@@ -26,7 +26,7 @@ DesignPatterns
 2.7 代理模式（Proxy）	                    
                                             
 #####3 行为型模式	                            
-3.1 责任链模式（Chain of Responsibility） 
+3.1 责任链模式（Chain of Responsibility）   
 3.2 命令模式（Command）	                    
 3.3 解释器模式（Interpreter）	            
 3.4 迭代器模式（Iterator）	                

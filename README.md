@@ -1,6 +1,17 @@
 DesignPatterns
 ==============
 
+	高内聚低耦合
+	控制反转
+	封装变化
+	依赖倒置
+
+	隔离接口
+	开闭原则
+	使用合成替代继承
+
+
+
 ####[设计模式 百科](http://baike.baidu.com/link?url=QGQbCTD0FKfOYvGwqzCKZinXiyNDvz95wVEjeyH3n_EShw1HoBRWAK-5y0cON0rkAN-roY0ppH8lqJy0S9e4ja)
 
 

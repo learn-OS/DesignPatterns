@@ -277,7 +277,9 @@ IBM Java高级
 >`final boolean wasInitialized = resize>0;`   
 >`if(isMacOS&&isIEBrowser&&wasInitialized()&&wasInitialized){  //      do something  }` 
 - 分解临时变量(Split Temporary Variable)
->针对每次赋值，创造一个独立的对应的临时变量
+>针对每次赋值，创造一个独立的对应的临时变量  
+![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150108174354.png)  
+
 - (Replace Method with Method Object)
 - (Remove Assignments to Parameters)
 - (Substitute Algorithm)

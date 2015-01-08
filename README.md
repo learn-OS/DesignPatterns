@@ -213,6 +213,7 @@ IBM Java高级
 > 增加代码可复用度  
 > 移除临时变量，降低资源消耗
 > 减少计算、判断次数，提高运行性能
+> 增加可读性
 	                                        
 #####1 重构原则
 
@@ -279,8 +280,15 @@ IBM Java高级
 - 分解临时变量(Split Temporary Variable)
 >针对每次赋值，创造一个独立的对应的临时变量  
 ![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150108174354.png)  
+![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150108174702.png)  
 
-- (Replace Method with Method Object)
+
+- 移除对参数的赋值(Remove Assignments to Parameters)
+>Java 的按值传递，使对参数的任何修改都不回返回给调用对象
+![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150108174702.png)  
+
+
+- 以函数对象取代函数(Replace Method with Method Object)
 - (Remove Assignments to Parameters)
 - (Substitute Algorithm)
 

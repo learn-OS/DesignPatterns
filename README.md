@@ -209,11 +209,7 @@ IBM Java高级
 ------
 ###重构 
 >####重构的作用  
-> 降低代码粒度.   
-> 增加代码可复用度  
-> 移除临时变量，降低资源消耗
-> 减少计算、判断次数，提高运行性能
-> 增加可读性
+
 	                                        
 #####1 重构原则
 
@@ -233,10 +229,15 @@ IBM Java高级
 
 
 #####5 重新组织函数
+> 降低代码粒度.   
+> 增加代码可复用度  
+> 移除临时变量，降低资源消耗
+> 减少计算、判断次数，提高运行性能
+> 增加可读性
 
-#####
 - 提取.方法\[函数]\(Extract Method)
 >从方法中抽取出更细力度的代码块，增加可复用度
+>![]()
 
 - 内联函数(Inline Method)
 >在函数调用点插入函数本体，然后移除该函数
@@ -245,12 +246,14 @@ IBM Java高级
 >\-----------------  
 >`int getRating(){ return(_numberOfLateDeliveries > 5) ? 2 ： 1 }`  
 
+
 - 内联临时变量(Inline Temp)
 >将所有该变量的引用动作，替换为对他的赋值的哪个表达式本身
 >`double basePrice = anOrder.basePrice();`
 >`return (basePrice > 1000)`  
 >\------------------  
 >`return (anOrder.basePrice() > 1000)`
+
 
 - 用查询取代临时变量(Replacet Temp with Query)
 >将表达式提炼到一个独立的函数中，将临时变量的多有引用点替换为对新函数的调用。此后，新函数也可以被其它函数使用
@@ -267,7 +270,8 @@ IBM Java高级
 >`....`  
 >`double basePrice(){`  
 >`    return _quantity * -itemPrice; `   
->` }` 
+>` }`
+
 
 - 引入解释性变量(Introduce Explaining Variable)
 >将复杂表达式（或其中一部分）的结果放进一个临时变量，以临时变量的名称来解释表达式的用途  
@@ -277,10 +281,12 @@ IBM Java高级
 >`final boolean isIEBrowser =browser.toUpperCase().indexOf("MAC")>-1;` 
 >`final boolean wasInitialized = resize>0;`   
 >`if(isMacOS&&isIEBrowser&&wasInitialized()&&wasInitialized){  //      do something  }` 
+
+
 - 分解临时变量(Split Temporary Variable)
 >针对每次赋值，创造一个独立的对应的临时变量  
 ![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150108174354.png)  
-![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150108174702.png)  
+![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150108174702.png)
 
 
 - 移除对参数的赋值(Remove Assignments to Parameters)
@@ -290,12 +296,14 @@ IBM Java高级
 ![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150108175401.png)
 ![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109101953.png)
 
+
 - 以函数对象取代函数(Replace Method with Method Object)
->![]()
+>![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109103002.png)
 >
 
+
 - 替换算法(Substitute Algorithm)
->![]()
+>![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109103351.png)
 
 
 

@@ -284,13 +284,18 @@ IBM Java高级
 
 
 - 移除对参数的赋值(Remove Assignments to Parameters)
->Java 的按值传递，使对参数的任何修改都不回返回给调用对象
-![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150108174702.png)  
+>Java 的按值传递，使对参数的任何修改都不回返回给调用对象，
+>通过final 对替换参数的临时变量赋值，强制遵循“不对参数赋值”这一原则
+![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150108175244.png)  
+![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150108175401.png)
 
 
 - 以函数对象取代函数(Replace Method with Method Object)
 - (Remove Assignments to Parameters)
 - (Substitute Algorithm)
+
+
+
 
 
 #####1 重构原则

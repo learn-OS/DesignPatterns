@@ -213,8 +213,51 @@ IBM Java高级
 
 
 ###重构 
->####重构的作用  
+>#####重构的作用
+>1.使软件更容易理解
+>2.帮助找到Bug
+>3.提高编译速度
+>4.
+>#####重构方法
+>1.尽量简洁
+>2.使用三位运算符
+>3.使用常量替换硬编码
+>4.使用方法替换反复出现的表达式
+>5.及早结束非正常逻辑
+>6.满足条件立即跳出循环
+>7.使用表结构分离公共逻辑，避免重复（坚持DRY原则）
+>8.分离变化参数，使用格式化方法 
+>9.使用方法抽取公共逻辑
+>10.尽量使用已有的Java API 
+>11.使方法通用化
+>12.避免空语句 
+>13.公共逻辑后置
+>14.公共逻辑前置
+>15.使用清晰的布尔型变量替换逻辑表达式 
+>16.减少重复计算
+>17.何时需要何时创建
+>18.利用已有的计算结果
+>19.替换switch结构
+>20.避免对参数赋值 
+>21.使用类替换类型代码 [示例5](http://wenku.baidu.com/view/034d5837a32d7375a417806b.html)
+>22.使用对象封装参数
+>23.封装集合操作 
+>24.避免一次性临时变量
+>25.一个变量一种作用 
 
+[](http://wenku.baidu.com/view/27423a5c3b3567ec102d8a0c.html)
+
+
+
+>####《重构》这本书真扯淡。读了才知道重构重要，但不是这本书  
+示例：
+[Java重构示例一](http://wenku.baidu.com/view/8920278ca0116c175f0e48fe.html?re=view)  
+>使用变量替换硬编码
+[Java重构示例二](http://wenku.baidu.com/view/34eb7110f18583d0496459d8.html?re=view)  
+[Java重构示例三](http://wenku.baidu.com/view/eda2535bbe23482fb4da4c7e.html?re=view)  
+[Java重构示例四](http://wenku.baidu.com/view/8920278ca0116c175f0e48fe.html?re=view)  
+[Java重构示例五](http://wenku.baidu.com/view/034d5837a32d7375a417806b.html?re=view)  
+[Java重构示例四]()  
 	                                        
 #####1 重构原则
 
@@ -224,7 +267,29 @@ IBM Java高级
 
 #####s
 
-#####3 重构原则
+#####3 代码的坏味道
+- 重复代码（Duplicated Code）
+- 过长函数（Long Method）
+- 过大的类（Large Class）
+- 过长参数列（Long Parameter List）
+- 发散式变化（Divergent change）
+- 散弹式修改（Shotgun surgery）
+- 依赖情结（Feature Envy）
+- 数据泥团（Data Clumps）
+- 基本类型偏执（Primitive Obsession）
+- switch 惊悚现身（Switch Statements）
+- 平行继承体系（Parallel InheritanceHierarchies）
+- 冗赘类（Lazy Class）
+- 夸夸其谈的未来性（Speculative Generality）
+- 令人迷惑的暂时字段（Temporary Field）
+- 过度耦合的消息链（Message Chains）
+- 中间人（Middle Man）
+- 狎昵关系（Inappropriate Intimacy）
+- 异曲同工的类（Altemative Classes with Different Interfaces）
+- 不完美的库类（incomplete Library Class）
+- 纯稚的数据类（Data Class）
+- 被拒绝的遗赠（Refused Bequest）
+- 过多注释（Comments）
 
 #####s
 
@@ -239,6 +304,7 @@ IBM Java高级
 > 移除临时变量，降低资源消耗
 > 减少计算、判断次数，提高运行性能
 > 增加可读性
+
 
 - 提取.方法\[函数]\(Extract Method)
 >从方法中抽取出更细力度的代码块，增加可复用度
@@ -323,11 +389,17 @@ IBM Java高级
 - 将类内联化（Inline Class）
 >(某个类没有做太多事情)将这个类的所有特性搬移到一个类中，然后移除
 - 隐藏“委托关系”（Hide Delegate）
->
-- 移除中间人（Remove Middle Man）
-- 引入外加函数（Introduce Foreign Method）
-- 引入本地扩展（Intoduce Local Extension）
+>![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109110711.png)
+>![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109110731.png)
+>![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109110802.png)
+>![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109110817.png)
 
+- 移除中间人（Remove Middle Man）
+>![]()
+- 引入外加函数（Introduce Foreign Method）
+>![]()
+- 引入本地扩展（Intoduce Local Extension）
+>![]()
 
 
 

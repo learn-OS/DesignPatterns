@@ -288,12 +288,14 @@ IBM Java高级
 >通过final 对替换参数的临时变量赋值，强制遵循“不对参数赋值”这一原则
 ![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150108175244.png)  
 ![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150108175401.png)
-
+![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109101953.png)
 
 - 以函数对象取代函数(Replace Method with Method Object)
-- (Remove Assignments to Parameters)
-- (Substitute Algorithm)
+>![]()
+>
 
+- 替换算法(Substitute Algorithm)
+>![]()
 
 
 

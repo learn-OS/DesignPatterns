@@ -380,15 +380,15 @@ IBM Java高级
 
 
 #####6.在对象之间迁移特性
-- 搬移函数（Move Method）  
->减少类之间的多余合作行为，降低耦合度，使类更加简明
-- 搬移字段（Move File）
->某个字段被所在类之外的另一个类频繁调用，移动字段
-- 提炼类（Extral Class）
->建立一个新类，将相关字段和函数从旧类搬移到新类
-- 将类内联化（Inline Class）
->(某个类没有做太多事情)将这个类的所有特性搬移到一个类中，然后移除
-- 隐藏“委托关系”（Hide Delegate）
+- 搬移函数（Move Method）      
+>减少类之间的多余合作行为，降低耦合度，使类更加简明  
+- 搬移字段（Move File）  
+>某个字段被所在类之外的另一个类频繁调用，移动字段  
+- 提炼类（Extral Class）  
+>建立一个新类，将相关字段和函数从旧类搬移到新类  
+- 将类内联化（Inline Class）  
+>(某个类没有做太多事情)将这个类的所有特性搬移到一个类中，然后移除  
+- 隐藏“委托关系”（Hide Delegate）  
 >![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109110711.png)
 >![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109110731.png)
 >![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109110802.png)

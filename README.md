@@ -251,8 +251,8 @@ IBM Java高级
 
 >####《重构》这本书真扯淡。读了才知道重构重要，但不是这本书  
 示例：
-[Java重构示例一](http://wenku.baidu.com/view/8920278ca0116c175f0e48fe.html?re=view)  
->使用变量替换硬编码
+[Java重构示例一](http://wenku.baidu.com/view/8920278ca0116c175f0e48fe.html?re=view)    
+>使用变量替换硬编码  
 [Java重构示例二](http://wenku.baidu.com/view/34eb7110f18583d0496459d8.html?re=view)  
 [Java重构示例三](http://wenku.baidu.com/view/eda2535bbe23482fb4da4c7e.html?re=view)  
 [Java重构示例四](http://wenku.baidu.com/view/8920278ca0116c175f0e48fe.html?re=view)  

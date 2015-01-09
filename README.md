@@ -260,14 +260,10 @@ IBM Java高级
 [Java重构示例四]()  
 	                                        
 #####1 重构原则
+>![]()
+>![]()
 
-#####s
-
-#####2 重构原则
-
-#####s
-
-#####3 代码的坏味道
+#####2 代码的坏味道
 - 重复代码（Duplicated Code）
 - 过长函数（Long Method）
 - 过大的类（Large Class）
@@ -291,11 +287,15 @@ IBM Java高级
 - 被拒绝的遗赠（Refused Bequest）
 - 过多注释（Comments）
 
-#####s
 
-#####4 重构原则
 
-#####s
+
+#####3 构筑测试体系
+>![]()
+>![]()
+
+#####4 重构列表
+>![]()
 
 
 #####5 重新组织函数
@@ -406,30 +406,101 @@ IBM Java高级
 
 
 
+
+
+
+#####7. 重新组织数据
+- 自封字段（Self Encapsulate Field）
+
+
+	class IntRange{
+		IntRange(int low,int high){
+			initialize(low,high);
+		}
+	    private void initialize(int low, int high) {
+			// TODO Auto-generated method stub
+			_low=low;
+			_high=high;
+		}
+	
+		boolean includes(int arg){
+			return arg >=getLow()&&arg<=getHigh();
+		}
+		
+		void grow(int factor){
+			setHigh(getHigh()*factor);
+		}
+		
+		private int _low , _high;
+	
+		 int getLow() {
+			return _low;
+		}
+	
+		 void setLow(int _low) {
+			this._low = _low;
+		}
+	
+		 int getHigh() {
+			return _high;
+		}
+	
+		 void setHigh(int _high) {
+			this._high = _high;
+		}
+		
+			
+	}
+	
+	class CappedRange extends IntRange{
+		CappedRange(int low,int high, int cap){
+			super(low, high);
+			_cap = cap;
+		}
+		
+		private int _cap;
+		int getCap(){
+			return _cap;
+		}
+	
+		int getHigh(){
+			return Math.min(super.getHigh(),getCap());
+		}
+	}
+
+
+
+- 以对象取代数据值（Replace Data Value with Object）
+- 将值对象改为引用对象
+- 将引用对象改为值对象
+- 以对象取代数组
+- 复制“被监视数据”
+- 将单项关联改为双向关联
+- 将双向关联改为单项关联
+- 以字面常量取代魔法书
+- 封装字段
+- 封装集合
+- 以数据类取代记录
+- 以类读取类代码
+- 以子类取代类型吗
+- 以State/Strategy取代类型码
+- 以字段取代子类
+
+
 #####s
 
 
-#####1 重构原则
+#####8.简化条件表达式
 
-#####s
+#####9.简化函数调用
 
+#####10.处理概括关系
 
-#####1 重构原则
+#####11.大型重构
 
-#####s
+#####12.重构，复用与实现
 
-#####1 重构原则
-
-#####s
-
-#####1 重构原则
-
-#####s
-
-#####1 重构原则
-
-#####s
-
+#####13.重构工具
 
 
 

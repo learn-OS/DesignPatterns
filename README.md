@@ -260,8 +260,8 @@ IBM Java高级
 [Java重构示例四]()  
 	                                        
 #####1 重构原则
->![]()
->![]()
+>![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109144912.png)
+>![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109144922.png)
 
 #####2 代码的坏味道
 - 重复代码（Duplicated Code）
@@ -291,19 +291,19 @@ IBM Java高级
 
 
 #####3 构筑测试体系
->![]()
->![]()
+>![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109145010.png)
+>![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109145018.png)
 
 #####4 重构列表
->![]()
+>![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109145131.png)
 
 
 #####5 重新组织函数
-> 降低代码粒度.   
-> 增加代码可复用度  
-> 移除临时变量，降低资源消耗
-> 减少计算、判断次数，提高运行性能
-> 增加可读性
+	> 降低代码粒度.   
+	> 增加代码可复用度  
+	> 移除临时变量，降低资源消耗
+	> 减少计算、判断次数，提高运行性能
+	> 增加可读性
 
 
 - 提取.方法\[函数]\(Extract Method)
@@ -395,11 +395,13 @@ IBM Java高级
 >![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109110817.png)
 
 - 移除中间人（Remove Middle Man）
->![]()
+>![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109111602.png)
+
 - 引入外加函数（Introduce Foreign Method）
->![]()
+>![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109112115.png)
+
 - 引入本地扩展（Intoduce Local Extension）
->![]()
+>![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109112356.png)
 
 
 
@@ -411,6 +413,7 @@ IBM Java高级
 
 #####7. 重新组织数据
 - 自封字段（Self Encapsulate Field）
+![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109135912.png)
 
 
 	class IntRange{
@@ -485,10 +488,6 @@ IBM Java高级
 - 以子类取代类型吗
 - 以State/Strategy取代类型码
 - 以字段取代子类
-
-
-#####s
-
 
 #####8.简化条件表达式
 

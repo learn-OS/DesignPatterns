@@ -207,6 +207,11 @@ IBM Java高级
 
 
 ------
+###封装
+>更多的隐藏对象字段，不用public生命类对象字段 
+
+
+
 ###重构 
 >####重构的作用  
 
@@ -237,14 +242,15 @@ IBM Java高级
 
 - 提取.方法\[函数]\(Extract Method)
 >从方法中抽取出更细力度的代码块，增加可复用度
->![]()
+>![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109103742.png)
+
 
 - 内联函数(Inline Method)
 >在函数调用点插入函数本体，然后移除该函数
 >`int getRating(){  return (moreThanFiveLateDeliveries()) ？ 2 ： 1； }`
 >`boolean moreThanFiveLateDeliveries(){ return _numberOfLateDeliveries > 5; }`  
 >\-----------------  
->`int getRating(){ return(_numberOfLateDeliveries > 5) ? 2 ： 1 }`  
+>`int getRating(){ return(_numberOfLateDeliveries > 5) ? 2 ： 1 }`
 
 
 - 内联临时变量(Inline Temp)
@@ -280,7 +286,7 @@ IBM Java高级
 >`final boolean isMacOS =platform.toUpperCase().indexOf("MAC")>-1;`  
 >`final boolean isIEBrowser =browser.toUpperCase().indexOf("MAC")>-1;` 
 >`final boolean wasInitialized = resize>0;`   
->`if(isMacOS&&isIEBrowser&&wasInitialized()&&wasInitialized){  //      do something  }` 
+>`if(isMacOS&&isIEBrowser&&wasInitialized()&&wasInitialized){  //      do something  }`
 
 
 - 分解临时变量(Split Temporary Variable)
@@ -299,7 +305,6 @@ IBM Java高级
 
 - 以函数对象取代函数(Replace Method with Method Object)
 >![](https://raw.githubusercontent.com/learn-OS/DesignPatterns/master/img/QQ20150109103002.png)
->
 
 
 - 替换算法(Substitute Algorithm)
@@ -308,7 +313,26 @@ IBM Java高级
 
 
 
-#####1 重构原则
+#####6.在对象之间迁移特性
+- 搬移函数（Move Method）  
+>减少类之间的多余合作行为，降低耦合度，使类更加简明
+- 搬移字段（Move File）
+>某个字段被所在类之外的另一个类频繁调用，移动字段
+- 提炼类（Extral Class）
+>建立一个新类，将相关字段和函数从旧类搬移到新类
+- 将类内联化（Inline Class）
+>(某个类没有做太多事情)将这个类的所有特性搬移到一个类中，然后移除
+- 隐藏“委托关系”（Hide Delegate）
+>
+- 移除中间人（Remove Middle Man）
+- 引入外加函数（Introduce Foreign Method）
+- 引入本地扩展（Intoduce Local Extension）
+
+
+
+
+
+
 
 #####s
 
